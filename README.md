@@ -17,7 +17,6 @@ A work in progress site about me utilizing HTML, CSS, and Javascript.
 - css/
     - reset.css
     - style.css
-- img/
 - index.html
 - js/
     - app.js
