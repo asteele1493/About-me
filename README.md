@@ -6,7 +6,6 @@ A work in progress site about me utilizing HTML, CSS, and Javascript.
 - Some foods I enjoy
 - Places I have lived
 - Things I enjoy doing 
-- Goals I have for myself
 
 ### The repository itself contains the following files and directories: 
  
