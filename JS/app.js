@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
 let nickname = window.prompt('Hello! What\'s your name? ');
-    alert('Welcome, ' +  nickname +  '!');    
+window.alert('Welcome, ' + nickname + '!');
 
 let answer1 = prompt('What\'s my favorite food?');
 console.log(answer1);
@@ -9,11 +9,11 @@ console.log(answer1);
 answer1 = answer1.toLowerCase();
 
 if (answer1 === 'pizza') {
-  alert('Heck yes I will literally eat pizza all day!');
+  window.alert('Heck yes I will literally eat pizza all day!');
 } else if (answer1 === 'Breakfast tacos') {
-  alert('Papas con huevo is forever number 1 in my heart.');
+  window.alert('Papas con huevo is forever number 1 in my heart.');
 } else {
-  alert('Nah brah, not a fan.');
+  window.alert('Nah brah, not a fan.');
 }
 
 // let answer2 = prompt('Where did I like living most?');
@@ -43,26 +43,26 @@ if (answer1 === 'pizza') {
 // }
 
 
-// let answer4 = prompt('Do I like tinned conservas?'); 
+// let answer4 = prompt('Do I like tinned conservas?');
 // console.log(answer4);
 
 // answer4 = answer4.toLowerCase();
 // if (answer4 === 'yes' || answer4 === 'y') {
-//     alert('It\'s my favorite food in the world!'); 
+//     alert('It\'s my favorite food in the world!');
 // }   else if (answer4 === 'no' || answer4 === 'n') {
 //     alert('Read my bio again pls');
 // }   else {
 //     alert('My favorite conservas are from Portugal.');
 // }
 
-// let answer5 = prompt('Was I ever a chef?'); 
+// let answer5 = prompt('Was I ever a chef?');
 // console.log(answer5);
 
 // answer5 = answer5.toLowerCase();
 // if (answer5 === 'yes' || answer5 === 'n') {
 //     alert('True. Wasn\'t my favorite though.');
 // }   else if (answer5 === 'no' || answer5 === 'n') {
-//     alert('Incorrect'); 
+//     alert('Incorrect');
 // } else {
 //     alert('My favorite thing to cook was pasta!');
 // }

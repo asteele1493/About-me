@@ -1,3 +1,8 @@
+head {
+    font-family : Helvetica;
+    color: 00AD8E
+}
+
 h1 {
     font-family : Arial, Helvetica, sans-serif;
     font-kerning: auto;
@@ -17,8 +22,9 @@ section {
 
 body {
     font-family : Arial, Helvetica, sans-serif;
-    background-color: antiquewhite;
+    background-color: AD3609;
     margin: auto;
+    position: sticky
 }
 
 ul {
