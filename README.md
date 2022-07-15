@@ -1,14 +1,17 @@
 # About-me
+
 A work in progress site about me utilizing HTML, CSS, and Javascript.
 
-### This project will include: 
+## This project will include
+
 
 - Some foods I enjoy
 - Places I have lived
 - Things I enjoy doing 
 
-### The repository itself contains the following files and directories: 
- 
+### The repository itself contains the following files and directories
+
+
 - .eslintrc.json
 - .gitignore
 - LICENSE
@@ -20,7 +23,7 @@ A work in progress site about me utilizing HTML, CSS, and Javascript.
 - js/
     - app.js
 
-### Some personal goals I have for this project: 
+### Some personal goals I have for this project
 
 - I want to experiment with more CSS styling
 - Use more intentional code to create a cohesive site

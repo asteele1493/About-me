@@ -3,7 +3,7 @@ h1 {
     font-kerning: auto;
     background-position: top;
     color: #2F4F4F;
-    margin: auto;
+    width: 50%
     
 }
 
@@ -24,4 +24,8 @@ body {
 ul {
     list-style-type: circle;
     margin: auto;
+}
+
+p {
+    color : 8A3816
 }
