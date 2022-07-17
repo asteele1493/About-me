@@ -21,9 +21,9 @@ console.log(answer2);
 
 answer2 = answer2.toLowerCase();
 
-if (answer2 === 'Houston'); {
+if (answer2 === 'Houston') {
     alert('Correct! H-town vicious baybee!');
-} else if (answer2 === 'Los Angeles'); {
+} else if (answer2 === 'Los Angeles') {
     alert('You don\'t know me at all.');
  } else {
         alert('I guess that\'s cool too.');
@@ -34,9 +34,9 @@ console.log(answer3);
 
 answer3 = answer3.toLowerCase();
 
-if (answer3 === 'Checking out new wine bars'); {
+if (answer3 === 'Checking out new wine bars') {
     alert('Absolutely! All about that natty life.');
-} else if (answer3 === 'Going to the beach.'); {
+} else if (answer3 === 'Going to the beach.') {
     alert('I do love some beach time');
 } else {
     alert('Did you read my bio? :)');
@@ -47,6 +47,7 @@ let answer4 = prompt('Do I like tinned conservas?');
 console.log(answer4);
 
 answer4 = answer4.toLowerCase();
+
 if (answer4 === 'yes' || answer4 === 'y') {
     alert('It\'s my favorite food in the world!');
 }   else if (answer4 === 'no' || answer4 === 'n') {
@@ -59,6 +60,7 @@ let answer5 = prompt('Was I ever a chef?');
 console.log(answer5);
 
 answer5 = answer5.toLowerCase();
+
 if (answer5 === 'yes' || answer5 === 'n') {
     alert('True. Wasn\'t my favorite though.');
 }   else if (answer5 === 'no' || answer5 === 'n') {
