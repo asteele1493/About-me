@@ -68,3 +68,42 @@ if (answer5 === 'yes' || answer5 === 'n') {
 } else {
     alert('My favorite thing to cook was pasta!');
 }
+///////////////////////////////////////////////////
+let numTurns = 0;
+
+
+let instrumentAnswer = 4;
+let answer6 = prompt('Turn ' + numTurns + ': Okay, final question. How many instruments can I play?');
+
+while (answer6 != instrumentAnswer && numTurns < 4) {
+    numTurns++;
+    console.log(answer6);
+}
+
+    if (instrumentAnswer == answer6) {
+        alert('Yes! You got it right!');
+   }
+   else if (answer6 > instrumentAnswer) {
+        alert ('That\'s too high a number :(');
+    }
+    else if (answer6 < answer6) {
+        alert ('That\'s too low a number :(');
+    }
+    else {
+        alert('Is that even a number?');
+    }
+
+///////////////////////////////////////////////////
+
+let numTurns = 0;
+let colors = ['blue', 'green', 'red', 'gray', 'black', 'orange'];
+console.log(colors);
+
+let answer7 = prompt('Turn' + numTurns + ' : What are my favorite colors?');
+while (answer7 != colors() && numTurns < 6) {
+    numTurns++;
+}
+console.log(answer7);
+
+answer7 = answer7.toLowerCase();
+
