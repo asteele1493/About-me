@@ -34,4 +34,10 @@ ul {
 
 p {
     color : 8A3816
+} 
+html {
+    background-image: url("img/Oregon_img.jpeg");
+    background-size: cover;
+    opacity: 0.7;
+    background-attachment: fixed;
 }

@@ -21,7 +21,7 @@ console.log(answer2);
 
 answer2 = answer2.toLowerCase();
 
-if (answer2 === 'Houston') {
+if (answer2 === 'houston') {
     alert('Correct! H-town vicious baybee!');
 } else if (answer2 === 'Los Angeles') {
     alert('You don\'t know me at all.');
@@ -30,6 +30,9 @@ if (answer2 === 'Houston') {
 }
 
 let answer3 = prompt('What do I like doing with my free time?');
+console.log(answer3);
+
+answer3 = answer3.toLowerCase();
 console.log(answer3);
 
 answer3 = answer3.toLowerCase();
@@ -49,11 +52,11 @@ console.log(answer4);
 answer4 = answer4.toLowerCase();
 
 if (answer4 === 'yes' || answer4 === 'y') {
-    alert('It\'s my favorite food in the world!');
-}   else if (answer4 === 'no' || answer4 === 'n') {
-    alert('Read my bio again pls');
-}   else {
-    alert('My favorite conservas are from Portugal.');
+  alert('It\'s my favorite food in the world!');
+} else if (answer4 === 'no' || answer4 === 'n') {
+  alert('Read my bio again pls');
+} else {
+  alert('My favorite conservas are from Portugal.');
 }
 
 let answer5 = prompt('Was I ever a chef?');
@@ -94,16 +97,23 @@ while (answer6 != instrumentAnswer && numTurns < 4) {
     }
 
 ///////////////////////////////////////////////////
-
-let numTurns = 0;
+// I created a variable, numTurns as my counter. I guess I could also use i.
 let colors = ['blue', 'green', 'red', 'gray', 'black', 'orange'];
 console.log(colors);
 
 let answer7 = prompt('Turn' + numTurns + ' : What are my favorite colors?');
-while (answer7 != colors() && numTurns < 6) {
+while (answer7 != colors() && numTurns <= 6) {
     numTurns++;
 }
 console.log(answer7);
 
 answer7 = answer7.toLowerCase();
 
+///////////////////////////////////////////////////
+
+//Final score draft.
+
+let solutions = ['pizza', 'houston', 'Checking out new wine bars', 'yes', 'yes', '4'] ['blue', 'green', 'red', 'gray', 'black', 'orange'];
+let user = []
+let score = 0
+console.log(solutions);
