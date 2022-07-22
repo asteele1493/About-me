@@ -1,4 +1,5 @@
 /*eslint-disable indent */
+
 'use strict';
 
 let userPoints = 0;
@@ -19,7 +20,7 @@ function answerOne() {
     window.alert('Heck yes I will literally eat pizza all day!');
     userPoints++;
   } else if (answer1 === 'breakfast tacos') {
-    window.alert('Papas con huevo is forever number 1 in my heart.');
+    window.alert('Papas con huevo is forever number one in my heart.');
     userPoints++;
   } else {
     window.alert('Sorry, not a fan.');
@@ -38,9 +39,9 @@ function answerTwo() {
       window.alert('Correct! H-town vicious baybee!');
       userPoints++;
     } else if (answer2 === 'los angeles') {
-      window.alert('You don\'t know me at all.');
+      window.alert('Sorry, guess again.');
     } else {
-      window.alert('I guess that\'s cool too.');
+      window.alert('Incorrect!');
     }
 }
 
@@ -53,13 +54,13 @@ function answerThree(){
     console.log(answer3);
     
     if (answer3 === 'going to wine bars') {
-    alert('Absolutely! All about that natty life.');
+    window.alert('Absolutely! All about that natty life.');
     userPoints++;
   } else if (answer3 === 'going to the beach.') {
-    alert('I do love some beach time');
+    window.alert('I do love some beach time');
     userPoints++;
   } else {
-    alert('Incorrect');
+    window.alert('Incorrect');
   }
 }
 
@@ -72,12 +73,12 @@ function answerFour(){
     console.log(answer4);
     
     if (answer4 === 'yes' || answer4 === 'y') {
-      alert('It\'s my favorite food in the world!');
+      window.alert('It\'s my favorite food in the world!');
       userPoints++;
     } else if (answer4 === 'no' || answer4 === 'n') {
-      alert('Read my bio again pls');
+      window.alert('You are sorely mistaken.');
     } else {
-      alert('My favorite conservas are from Portugal.');
+      window.alert('My favorite conservas are from Portugal.');
     }
 }
 
@@ -90,49 +91,58 @@ function answerFive(){
     console.log(answer5);
     
     if (answer5 === 'yes' || answer5 === 'y') {
-      alert('Correct!');
+      window.alert('Correct!');
       userPoints++;
     } else if (answer5 === 'no' || answer5 === 'n') {
-      alert('Incorrect.');
+      window.alert('Incorrect.');
     } else {
-      alert('My favorite thing to cook was pasta!');
+      window.alert('My favorite thing to cook was pasta!');
     }
 }
-answerOne();
-answerTwo();
-answerThree();
-answerFour();
-answerFive();
 
 ///////////////////////////////////////////////////
 // This is what I have so far. It took a lot of incremental testing and debugging to make it run. Only issue (I think) I'm running
 //into now is making my alert happen when the number is guessed correctly.
 
-// let numTurns = 0;
-// let correctAnswer = 4 ;
-// let answeredCorrectly = false;
+function answerSix(){
 
-// while(numTurns <4 && !answeredCorrectly) {
-//   let answer6 = prompt('Okay, final question. How many instruments can I play? Numerical input only pls. ' + 'Attempt ' + numTurns);
-//   if(answer6 === correctAnswer) {
-//     window.alert('Yes!, correct!');
-//     userPoints++;
-//     answeredCorrectly = false;
-//   } else (answer6 !== correctAnswer); {
-//     window.alert('Incorrect! Try again.');
-//     answeredCorrectly = true;
-//   }
-//   numTurns++;
-// }
+for(let i = 0; i < 4; i++) {
+  let correctAnswer = '4';
+  let answer6 = prompt('How many instruments can I play?');
+  answer6 = answer6.toLowerCase();
+    if(answer6 === correctAnswer){
+      window.alert('Correct!');
+      userPoints++;
+      break;
+    } else if(answer6 !== correctAnswer){
+       window.alert('Incorrect, try again.');
+    } else (answer6 !== correctAnswer && i === 4);
+       window.alert('You are out of attempts.');
+  }
+}
 
 // ///////////////////////////////////////////////////
 // Add a 7th question that has multiple possible correct answers that are stored in an array. Give the user 6 attempts to guess the correct answer.
 // The guesses will end once the user guesses a correct answer or they run out of attempts.
 // Display all possible correct answers to the user
 // Consider using a loop of some sort for this question.
+function answerSeven(){
 
+let possibleAnswers = ['USA', 'France', 'Israel', 'Italy'];
+  for (i = 0; i < 6; i++) {
+    let answer7 = prompt('Guess which countries I have lived in! You\'ll only get six tries to guess correctly.');
+    answer7 = answer7.toLowerCase();}
+    let possibleAnswer = possibleAnswers[i];
+    if(answer7 === possibleAnswer){
+      window.alert('Correct!'); 
+      userPoints++;
+    } else if(answer7 !== possibleAnswer)
+        window.alert('Incorrect, guess again.'); 
+}
+  //   } else if(answer7 !== possibleAnswer && answer7 !== possibleAnswers[i]);
+  //     window.alert('You are out of guesses.');
+  // }
 // let numAttempts = 0;
-// let possibleAnswers = ['USA', 'France', 'Israel', 'Italy'];
 // possibleAnswers = possibleAnswers.toLowerCase();
 // let answer7 = prompt('Guess which countries I have lived in! You\'ll only get six tries to get a correct answer. ' + 'Attempt ' + numAttempts).toLowerCase();
 // console.log(answer7);
@@ -151,10 +161,24 @@ answerFive();
 //   numAttempts++;
 // }
 
+
 // ///////////////////////////////////////////////////
 
 // //Final score draft.
 
-// //let correctSolutions = ['pizza', 'breakfast tacos', 'houston', 'going to wine bars', 'going to the beach', 
-// //'yes', 'y', 'yes', 'y', 4, 'USA', 'France', 'Israel, 'Italy' ];
-// alert('you have ' + userPoints + ' points.');
+// let correctSolutions = ['pizza', 'breakfast tacos', 'houston', 'going to wine bars', 'going to the beach', 
+// 'yes', 'y', 'yes', 'y', 4, 'USA', 'France', 'Israel, 'Italy' ];
+ function totalPoints(){
+  alert(nickname + ' you have ' + userPoints + ' points.');
+ }
+
+document.write(nickname + 'you have ' + userPoints + ' points.');
+
+answerOne();
+answerTwo();
+answerThree();
+answerFour();
+answerFive();
+answerSix();
+answerSeven();
+totalPoints();
