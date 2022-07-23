@@ -46,13 +46,12 @@ function answerTwo() {
 }
 
 function answerThree(){
-  
     let answer3 = prompt('What do I like doing with my free time?');
     console.log(answer3);
-    
+
     answer3 = answer3.toLowerCase();
     console.log(answer3);
-    
+
     if (answer3 === 'going to wine bars') {
     window.alert('Absolutely! All about that natty life.');
     userPoints++;
@@ -65,13 +64,13 @@ function answerThree(){
 }
 
 function answerFour(){
-  
+
     let answer4 = prompt('Do I like tinned conservas?');
     console.log(answer4);
-    
+
     answer4 = answer4.toLowerCase();
     console.log(answer4);
-    
+
     if (answer4 === 'yes' || answer4 === 'y') {
       window.alert('It\'s my favorite food in the world!');
       userPoints++;
@@ -83,13 +82,13 @@ function answerFour(){
 }
 
 function answerFive(){
-  
+
     let answer5 = prompt('Was I ever a chef?');
     console.log(answer5);
-    
+
     answer5 = answer5.toLowerCase();
     console.log(answer5);
-    
+
     if (answer5 === 'yes' || answer5 === 'y') {
       window.alert('Correct!');
       userPoints++;
@@ -106,55 +105,61 @@ function answerFive(){
 
 function answerSix(){
 
-for(let i = 0; i < 4; i++) {
-  let correctAnswer = '4';
-  let answer6 = prompt('How many instruments can I play?');
-  answer6 = answer6.toLowerCase();
-    if(answer6 === correctAnswer){
-      window.alert('Correct!');
-      userPoints++;
-      break;
-    } else if(answer6 !== correctAnswer){
-       window.alert('Incorrect, try again.');
-    } else (answer6 !== correctAnswer && i === 4);
-       window.alert('You are out of attempts.');
+    for(let i = 0; i < 4; i++){
+      let correctAnswer = '4';
+      let answer6 = prompt('How many instruments can I play?');
+        if(answer6 == correctAnswer) {
+         alert('Correct!');
+          userPoints++;
+          break;
+        } else if (answer6 !== correctAnswer) {
+          alert('Incorrect, try again.');
+        } else {(answer6 !== correctAnswer && i === 4);
+          alert('You are out of attempts.');
+          break;
+      }
+    }
   }
-}
+
+
 
 // ///////////////////////////////////////////////////
 // Add a 7th question that has multiple possible correct answers that are stored in an array. Give the user 6 attempts to guess the correct answer.
 // The guesses will end once the user guesses a correct answer or they run out of attempts.
 // Display all possible correct answers to the user
 // Consider using a loop of some sort for this question.
-function answerSeven(){
 
+function answerSeven(){
+let answer7 = prompt('Guess which countries I have lived in! You\'ll only get six tries to guess correctly.');
+answer7 = answer7.toLowerCase();
 let possibleAnswers = ['USA', 'France', 'Israel', 'Italy'];
-  for (i = 0; i < 6; i++) {
-    let answer7 = prompt('Guess which countries I have lived in! You\'ll only get six tries to guess correctly.');
-    answer7 = answer7.toLowerCase();}
+  for (let i = 0; i < 6; i++) {
     let possibleAnswer = possibleAnswers[i];
-    if(answer7 === possibleAnswer){
-      window.alert('Correct!'); 
-      userPoints++;
-    } else if(answer7 !== possibleAnswer)
-        window.alert('Incorrect, guess again.'); 
-}
-  //   } else if(answer7 !== possibleAnswer && answer7 !== possibleAnswers[i]);
-  //     window.alert('You are out of guesses.');
-  // }
+      if(answer7 == possibleAnswer){
+        alert('Correct!');
+        userPoints++;
+        continue;
+      } else if(answer7 !== possibleAnswer){
+          alert('Incorrect, guess again.');
+          continue;
+      } else(answer7 !== possibleAnswer && i===6);
+        alert('You are out of guesses.');
+        break;
+    }
+  }
 // let numAttempts = 0;
 // possibleAnswers = possibleAnswers.toLowerCase();
 // let answer7 = prompt('Guess which countries I have lived in! You\'ll only get six tries to get a correct answer. ' + 'Attempt ' + numAttempts).toLowerCase();
 // console.log(answer7);
-// let answeredCorrectly = false; 
+// let answeredCorrectly = false;
 //   while (numAttempts < 6 && !answeredCorrectly) {
 //   //let answer7 = prompt('Guess which countries I have lived in! You\'ll only get six tries to get a correct answer. ' + 'Attempt ' + numAttempts).toLowerCase();
 //   //console.log(answer7);
 //       for (let i = 0; i < 6; i++) {
 //         console.log(possibleAnswers);
-//         alert('You got one right!'); 
+//         alert('You got one right!');
 //         userPoints++;
-//         answeredCorrectly = true; 
+//         answeredCorrectly = true;
 //     } if (answer7 !== possibleAnswers) {
 //     answeredCorrectly = false;
 //   }
@@ -166,7 +171,7 @@ let possibleAnswers = ['USA', 'France', 'Israel', 'Italy'];
 
 // //Final score draft.
 
-// let correctSolutions = ['pizza', 'breakfast tacos', 'houston', 'going to wine bars', 'going to the beach', 
+// let correctSolutions = ['pizza', 'breakfast tacos', 'houston', 'going to wine bars', 'going to the beach',
 // 'yes', 'y', 'yes', 'y', 4, 'USA', 'France', 'Israel, 'Italy' ];
  function totalPoints(){
   alert(nickname + ' you have ' + userPoints + ' points.');
