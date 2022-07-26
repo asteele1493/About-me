@@ -108,7 +108,7 @@ function answerSix(){
     for(let i = 0; i < 4; i++){
       let correctAnswer = '4';
       let answer6 = prompt('How many instruments can I play?');
-        if(answer6 == correctAnswer) {
+        if(answer6 === correctAnswer) {
          alert('Correct!');
           userPoints++;
           break;
@@ -130,41 +130,41 @@ function answerSix(){
 // Consider using a loop of some sort for this question.
 
 function answerSeven(){
-let answer7 = prompt('Guess which countries I have lived in! You\'ll only get six tries to guess correctly.');
-answer7 = answer7.toLowerCase();
-let possibleAnswers = ['USA', 'France', 'Israel', 'Italy'];
+  let answer7 = prompt('Guess which countries I\'ve lived in!').toLowerCase();
+  console.log(answer7);
+  let possibleAnswers = ['USA', 'France', 'Israel', 'Italy'];
+  possibleAnswers = possibleAnswers.toLowerCase();
+   // this for loop is going to track my user's attempts at guessing.
   for (let i = 0; i < 6; i++) {
-    let possibleAnswer = possibleAnswers[i];
-      if(answer7 == possibleAnswer){
-        alert('Correct!');
-        userPoints++;
-        continue;
-      } else if(answer7 !== possibleAnswer){
-          alert('Incorrect, guess again.');
-          continue;
-      } else(answer7 !== possibleAnswer && i===6);
-        alert('You are out of guesses.');
-        break;
-    }
+  // this for loop is for iterating through my answers.
+  //possibleAnswers = possibleAnswers.toLowerCase();
+    for (let j = 0; j < possibleAnswers.length; j++) {
+          if (answer7 === possibleAnswers[0]) {
+            window.alert('Correct!');
+            userPoints++;
+       } else if (answer7 === possibleAnswers[1]) {
+            window.alert('Correct!');
+            userPoints++;
+       } else if (answer7 === possibleAnswers[2]) {
+            window.alert('Correct!');
+            userPoints++;
+       } else (answer7 === possibleAnswers[3]);
+            window.alert('Correct!');
+            userPoints++;
+       }
+    if(answer7 !== possibleAnswers[0]) {
+      window.alert('Incorrect, guess again.');
+  } else if(answer7 !== possibleAnswers[1]) {
+      window.alert('Incorrect, guess again.');
+  } else if (answer7 !== possibleAnswers[2]) {
+      window.alert('Incorrect, guess again.');
+  } else if (answer7 !== possibleAnswers[3]) {
+      window.alert('Incorrect, guess again.');
+  } else (answer7 !== possibleAnswers && i === 6); {
+      window.alert('You are out of guesses.');
   }
-// let numAttempts = 0;
-// possibleAnswers = possibleAnswers.toLowerCase();
-// let answer7 = prompt('Guess which countries I have lived in! You\'ll only get six tries to get a correct answer. ' + 'Attempt ' + numAttempts).toLowerCase();
-// console.log(answer7);
-// let answeredCorrectly = false;
-//   while (numAttempts < 6 && !answeredCorrectly) {
-//   //let answer7 = prompt('Guess which countries I have lived in! You\'ll only get six tries to get a correct answer. ' + 'Attempt ' + numAttempts).toLowerCase();
-//   //console.log(answer7);
-//       for (let i = 0; i < 6; i++) {
-//         console.log(possibleAnswers);
-//         alert('You got one right!');
-//         userPoints++;
-//         answeredCorrectly = true;
-//     } if (answer7 !== possibleAnswers) {
-//     answeredCorrectly = false;
-//   }
-//   numAttempts++;
-// }
+  }
+}
 
 
 // ///////////////////////////////////////////////////
@@ -177,7 +177,7 @@ let possibleAnswers = ['USA', 'France', 'Israel', 'Italy'];
   alert(nickname + ' you have ' + userPoints + ' points.');
  }
 
-document.write(nickname + 'you have ' + userPoints + ' points.');
+/////////////////////////////////////////////////////
 
 answerOne();
 answerTwo();
@@ -187,3 +187,4 @@ answerFive();
 answerSix();
 answerSeven();
 totalPoints();
+
