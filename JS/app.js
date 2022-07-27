@@ -3,7 +3,6 @@
 'use strict';
 
 let userPoints = 0;
-let i = 0;
 
 let nickname = window.prompt('Hello! What\'s your name? ');
 window.alert('Welcome, ' + nickname + '!');
@@ -130,47 +129,35 @@ function answerSix(){
 // Display all possible correct answers to the user
 // Consider using a loop of some sort for this question.
 
+//initialize function
 function answerSeven(){
-
+//set variable for answer
+  let answer7 = prompt('Guess which countries I have lived in!');
+  answer7 = answer7.toLowerCase();
+//set variable to array
   let possibleAnswers = ['usa', 'france', 'israel', 'italy'];
-  possibleAnswers = possibleAnswers.toLowerCase();
-while (i < 6) {
-  i++;
-  for (let i = 0; i < 6; i++);
-    let answer7 = prompt('Guess which countries I have lived in!');
-    answer7 = answer7.toLowerCase();
-
-    if (answer7 == possibleAnswers[0]) {
-        alert('Correct!');
-        userPoints++;
-    } else if (answer7 == possibleAnswers[1]) {
-        alert('Correct!');
-        userPoints++;
-    } else if (answer7 == possibleAnswers[2]) {
-        alert('Correct!');
-        userPoints++;
-    } else if (answer7 == possibleAnswers[3]) {
-        alert('Correct!');
-        userPoints++;
-    } else {
-        alert('Incorrect!');
-        return;
+//set counter for while loop
+  let i = 0;
+//initialize while loop accounting for total attempts
+  while (i < 5){
+//set i as incrementor
+    i++;
+//initialize for loop with length of array as stopping point
+    for (let j = 0; j < possibleAnswers.length; j++){
+//if statement for correct answers & response. Returns if correct.
+        if (answer7 === possibleAnswers[j]){
+            window.alert('Correct!');
+            userPoints++;
+            return;
+        }
     }
+//what happens if user input is incorrect. Done outside of for loop as to still increment with while loop.
+    window.alert('Incorrect! Guess again.');
+    answer7 = prompt('Try again.');
   }
+//what happens if user input is incorrect and there are no more attempts available. Done outside of while loop.
+  window.alert('You\'re out of attempts.');
 }
-
-  //   if(answer7 !== possibleAnswers[0]) {
-  //     window.alert('Incorrect, guess again.');
-  // } else if(answer7 !== possibleAnswers[1]) {
-  //     window.alert('Incorrect, guess again.');
-  // } else if (answer7 !== possibleAnswers[2]) {
-  //     window.alert('Incorrect, guess again.');
-  // } else if (answer7 !== possibleAnswers[3]) {
-  //     window.alert('Incorrect, guess again.');
-  // } else (answer7 !== possibleAnswers && j === 6); {
-  //     window.alert('You are out of guesses.');
-  // }
-
 
 // ///////////////////////////////////////////////////
 
