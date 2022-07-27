@@ -130,41 +130,43 @@ function answerSix(){
 // Consider using a loop of some sort for this question.
 
 function answerSeven(){
-  let answer7 = prompt('Guess which countries I\'ve lived in!').toLowerCase();
-  console.log(answer7);
-  let possibleAnswers = ['USA', 'France', 'Israel', 'Italy'];
+
+  let possibleAnswers = ['usa', 'france', 'israel', 'italy'];
   possibleAnswers = possibleAnswers.toLowerCase();
-   // this for loop is going to track my user's attempts at guessing.
-  for (let i = 0; i < 6; i++) {
-  // this for loop is for iterating through my answers.
-  //possibleAnswers = possibleAnswers.toLowerCase();
-    for (let j = 0; j < possibleAnswers.length; j++) {
-          if (answer7 === possibleAnswers[0]) {
-            window.alert('Correct!');
-            userPoints++;
-       } else if (answer7 === possibleAnswers[1]) {
-            window.alert('Correct!');
-            userPoints++;
-       } else if (answer7 === possibleAnswers[2]) {
-            window.alert('Correct!');
-            userPoints++;
-       } else (answer7 === possibleAnswers[3]);
-            window.alert('Correct!');
-            userPoints++;
-       }
-    if(answer7 !== possibleAnswers[0]) {
-      window.alert('Incorrect, guess again.');
-  } else if(answer7 !== possibleAnswers[1]) {
-      window.alert('Incorrect, guess again.');
-  } else if (answer7 !== possibleAnswers[2]) {
-      window.alert('Incorrect, guess again.');
-  } else if (answer7 !== possibleAnswers[3]) {
-      window.alert('Incorrect, guess again.');
-  } else (answer7 !== possibleAnswers && i === 6); {
-      window.alert('You are out of guesses.');
+
+  for (let i = 0; i < 6; i ++);
+    let answer7 = prompt('Guess which countries I have lived in!');
+    answer7 = answer7.toLowerCase();
+
+    if (answer7 == possibleAnswers[0]) {
+        alert('Correct!');
+        userPoints++;
+    } else if (answer7 == possibleAnswers[1]) {
+        alert('Correct!');
+        userPoints++;
+    } else if (answer7 == possibleAnswers[2]) {
+        alert('Correct!');
+        userPoints++;
+    } else if (answer7 == possibleAnswers[3]) {
+        alert('Correct!');
+        userPoints++;
+    } else {
+        alert('Incorrect!');
+        return;
+    }
   }
-  }
-}
+
+  //   if(answer7 !== possibleAnswers[0]) {
+  //     window.alert('Incorrect, guess again.');
+  // } else if(answer7 !== possibleAnswers[1]) {
+  //     window.alert('Incorrect, guess again.');
+  // } else if (answer7 !== possibleAnswers[2]) {
+  //     window.alert('Incorrect, guess again.');
+  // } else if (answer7 !== possibleAnswers[3]) {
+  //     window.alert('Incorrect, guess again.');
+  // } else (answer7 !== possibleAnswers && j === 6); {
+  //     window.alert('You are out of guesses.');
+  // }
 
 
 // ///////////////////////////////////////////////////
