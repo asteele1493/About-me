@@ -3,6 +3,7 @@
 'use strict';
 
 let userPoints = 0;
+let i = 0;
 
 let nickname = window.prompt('Hello! What\'s your name? ');
 window.alert('Welcome, ' + nickname + '!');
@@ -133,8 +134,9 @@ function answerSeven(){
 
   let possibleAnswers = ['usa', 'france', 'israel', 'italy'];
   possibleAnswers = possibleAnswers.toLowerCase();
-
-  for (let i = 0; i < 6; i ++);
+while (i < 6) {
+  i++;
+  for (let i = 0; i < 6; i++);
     let answer7 = prompt('Guess which countries I have lived in!');
     answer7 = answer7.toLowerCase();
 
@@ -155,6 +157,7 @@ function answerSeven(){
         return;
     }
   }
+}
 
   //   if(answer7 !== possibleAnswers[0]) {
   //     window.alert('Incorrect, guess again.');
@@ -175,9 +178,9 @@ function answerSeven(){
 
 // let correctSolutions = ['pizza', 'breakfast tacos', 'houston', 'going to wine bars', 'going to the beach',
 // 'yes', 'y', 'yes', 'y', 4, 'USA', 'France', 'Israel, 'Italy' ];
- function totalPoints(){
-  alert(nickname + ' you have ' + userPoints + ' points.');
- }
+  function totalPoints(){
+   window.alert(nickname + ', you have ' + userPoints + ' points.');
+  }
 
 /////////////////////////////////////////////////////
 
