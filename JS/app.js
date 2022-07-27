@@ -11,10 +11,8 @@ window.alert('Welcome, ' + nickname + '!');
 function answerOne() {
 
   let answer1 = prompt('What\'s my favorite food?');
-  console.log(answer1);
 
   answer1 = answer1.toLowerCase();
-  console.log(answer1);
 
   if (answer1 === 'pizza') {
     window.alert('Heck yes I will literally eat pizza all day!');
@@ -30,10 +28,8 @@ function answerOne() {
 function answerTwo() {
 
   let answer2 = prompt('Where did I like living most?');
-  console.log(answer2);
 
   answer2 = answer2.toLowerCase();
-  console.log(answer2);
 
   if (answer2 === 'houston') {
       window.alert('Correct! H-town vicious baybee!');
@@ -47,10 +43,8 @@ function answerTwo() {
 
 function answerThree(){
     let answer3 = prompt('What do I like doing with my free time?');
-    console.log(answer3);
 
     answer3 = answer3.toLowerCase();
-    console.log(answer3);
 
     if (answer3 === 'going to wine bars') {
     window.alert('Absolutely! All about that natty life.');
@@ -66,10 +60,8 @@ function answerThree(){
 function answerFour(){
 
     let answer4 = prompt('Do I like tinned conservas?');
-    console.log(answer4);
 
     answer4 = answer4.toLowerCase();
-    console.log(answer4);
 
     if (answer4 === 'yes' || answer4 === 'y') {
       window.alert('It\'s my favorite food in the world!');
@@ -84,10 +76,8 @@ function answerFour(){
 function answerFive(){
 
     let answer5 = prompt('Was I ever a chef?');
-    console.log(answer5);
 
     answer5 = answer5.toLowerCase();
-    console.log(answer5);
 
     if (answer5 === 'yes' || answer5 === 'y') {
       window.alert('Correct!');
