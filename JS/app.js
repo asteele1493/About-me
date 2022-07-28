@@ -108,6 +108,7 @@ function answerSix(){
           alert('Too high!');
       }
     } alert('You are out of attempts.');
+      alert('I can play four instruments.');
       return;
   }
 
@@ -147,6 +148,7 @@ function answerSeven(){
   }
 //what happens if user input is incorrect and there are no more attempts available. Done outside of while loop.
   window.alert('You\'re out of attempts.');
+  window.alert('I have lived in the USA, France, Israel and Italy.');
 }
 
 // ///////////////////////////////////////////////////
