@@ -101,7 +101,7 @@ function answerSix(){
         if(answer6 === correctAnswer) {
          alert('Correct!');
           userPoints++;
-          break;
+          return;
         } else if (answer6 < correctAnswer && i < 4 ) {
           alert('Too low.');
         } else if (answer6 > correctAnswer && i < 4) {
