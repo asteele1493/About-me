@@ -102,13 +102,13 @@ function answerSix(){
          alert('Correct!');
           userPoints++;
           break;
-        } else if (answer6 !== correctAnswer) {
-          alert('Incorrect, try again.');
-        } else {(answer6 !== correctAnswer && i === 4);
-          alert('You are out of attempts.');
-          break;
+        } else if (answer6 < correctAnswer && i < 4 ) {
+          alert('Too low.');
+        } else if (answer6 > correctAnswer && i < 4) {
+          alert('Too high!');
       }
-    }
+    } alert('You are out of attempts.');
+      return;
   }
 
 
